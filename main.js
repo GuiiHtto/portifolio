@@ -1,4 +1,4 @@
-window.addEventListener("scroll", "onScroll")
+window.addEventListener('scroll', 'onScroll')
 
 onScroll()
 function onScroll() {
@@ -40,9 +40,9 @@ function activateMenuAtCurrentSection(section) {
 
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add("scroll")
+    navigation.classList.add('scroll')
   } else {
-    navigation.classList.remove("scroll")
+    navigation.classList.remove('scroll')
   }
 }
 
