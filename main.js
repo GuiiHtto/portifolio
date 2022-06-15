@@ -1,6 +1,5 @@
-window.addEventListener('scroll', 'onScroll')
+const navigation = document.getElementById('navigation')
 
-onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
@@ -31,7 +30,7 @@ function activateMenuAtCurrentSection(section) {
 
   const sectionId = section.getAttribute('id')
   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
-
+  document.getElementById('navigation')
   menuElement.classList.remove('active')
   if (sectionBoundaries) {
     menuElement.classList.add('active')
@@ -76,3 +75,5 @@ ScrollReveal({
   #about, 
   #about header, 
   #about .content`)
+
+window.addEventListener('scroll', onScroll)
